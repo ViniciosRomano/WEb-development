@@ -1,0 +1,100 @@
+/* reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* se usar padding ultiliza box-sizin, n tenho ctz */
+}
+/* criando variaveis */
+:root{
+    /* --name-name: color; */
+    --bg-dark: #000;
+    --light: #fff;
+    --hover: #dc143c;
+}
+
+/* formataçoes geneticas */
+body{
+    /* colocar a fonte jogada no head para o body */
+    font-family: 'Poppins', sans-serif;
+}
+
+ul,ol{
+    list-style: none
+ }
+a{
+    text-decoration: none;
+    color:var(--light)
+    transition: .5s;
+}
+    /* so muda a cor quando o mouse passa por cima o hover */
+a:hover{
+    color: var(--hover)
+}
+/* fim formataçoes genericas */
+
+/* formataçao do header */
+.header-page{
+    /* w100% */
+    width: 100%;
+    height: 80px;
+    /* background-color: #bc143c; */
+    /* padrao flex leva a direita os filhos do  */
+    display: flex;
+    /* posiçao inicial dos filhos */
+    flex-direction: row;
+    /* alinhamento vertical, flex start or flex end or center */
+    align-items: center;
+    /* alinhamento horizontal flex start or flex end or center, space between, space around,space-evenly  */
+    justify-content: space-between;
+    /* cria identaçao ao lados */
+    padding: 0 10px;    
+    /* posicionando o menu */
+    position: fixed;
+    /* position fixed ou absolute */
+    top: 0;
+    left: 0;
+}
+.header-title{
+    color: var(--light);
+    font-size: 40px;
+}
+/* mistura de classe com ul */
+.menu ul{
+    display: flex;
+}
+.menu li{
+    /* e externo entao nao é pedding */
+    margin: 0 10px;
+}
+
+/*fim formataçao do header */
+
+
+.container {
+    /* Colocar em porcentagem a width sempre e colocar height vh */
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* use fixed ou scroll, porem fixed e bem melhor */
+}
+
+.bg-image-1{
+    /* alt seta para baixo muda a linha */
+    /* backgroud-image, url e ..  para voltar / diretorio */
+    background-image: url(../images/pexels-daniel-putzer-633409.jpg);
+}
+.bg-image-2{
+    background-image: url(../images/pexels-negative-space-34600.jpg);
+}
+.bg-image-3{
+    background-image: url(../images/pexels-tranmautritam-69432.jpg);
+}
+
+.bg-color-1{
+    /* ctrl espaço */
+    background-color: var(--bg-dark);
+}
