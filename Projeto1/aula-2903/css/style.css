@@ -1,0 +1,17 @@
+/* reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    /* Colocar em porcentagem a width sempre e colocar height vh */
+    width: 100%;
+    height: 100vh;
+    /* backgroud-image, url e ..  para voltar / diretorio */
+    background-image: url(../images/pexels-daniel-putzer-633409.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
