@@ -1,0 +1,34 @@
+*{   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* colocar a fonte jogada no head para o body */
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+h1{
+    color: #fff;
+}
+h2{
+    color: #fff;
+}
+img{
+    width: 350px;
+    height: 200px;
+}
+p{
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: #9d0208;
+}
+.bg-color-1{
+    background-color: #000;
+}

@@ -1,0 +1,117 @@
+/* reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* se usar padding ultiliza box-sizin, n tenho ctz */
+}
+:root{
+    /* --name-name: color; */
+    --bg-dark: #000;
+    --light: #fff;
+    --hover: #dc143c;
+    --colorx: #fff;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.header-page{
+    /* w100% */
+    width: 100%;
+    height: 80px;
+    /* background-color: #bc143c; */
+    /* padrao flex leva a direita os filhos do  */
+    display: flex;
+    /* posiçao inicial dos filhos */
+    flex-direction: row;
+    /* alinhamento vertical, flex start or flex end or center */
+    align-items: center;
+    /* alinhamento horizontal flex start or flex end or center, space between, space around,space-evenly  */
+    justify-content: space-between;
+    /* cria identaçao ao lados */
+    padding: 0 10px;    
+    /* posicionando o menu */
+    position: fixed;
+    /* position fixed ou absolute */
+    top: 0;
+    left: 0;
+}
+.header-title{
+    color: var(--light);
+    font-size: 40px;
+}
+
+ul,ol{
+    list-style: none
+}
+/* mistura de classe com ul */
+.menu ul{
+    display: flex;
+}
+
+.menu li{
+    /* e externo entao nao é pedding */
+    margin: 0 10px;
+}
+
+/*fim formataçao do header */
+.container {
+    /* Colocar em porcentagem a width sempre e colocar height vh */
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* use fixed ou scroll, porem fixed e bem melhor */
+}
+h2 {
+    line-height: 4;
+    font-weight: 900;
+    text-align: center;
+    font-size: 40px;
+    color: var(--colorx);
+}
+img{
+    width: 440px;
+    height: 270px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+p{
+    color: var(--colorx);
+    font-size: 20px;
+    /*fonte padrao 16px  */
+    font-weight: 400;
+    text-align: center;
+    line-height: 3;
+}
+
+
+a{
+    color: var(--colorx);
+    text-decoration: none;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 4;
+}
+a:hover{
+    color:var(--hover);
+}
+.bg-color-1{
+    /* ctrl espaço */
+    background-color: var(--bg-dark);
+}
+.bg-image-1{
+    background-image: url(../images/pexels-hasan-albari-120257XX5.jpg);
+}
+.bg-image-2{
+    background-image: url(../images/pexels-arun-thomas-5878303E.jpg);
+}
+.bg-image-3{
+    background-image: url(../images/pexels-mnz-167076D.jpg);
+}
