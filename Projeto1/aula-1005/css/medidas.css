@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    padding: 20px;
+}
+/* Medidas EM - pega de referencia ao tamanho da font do elemento pai */
+.box{
+    margin: 20px 0px;
+    /* font-size: 10px; */
+}
+.box p{
+    font-size: 2rem;
+}
+/* Rem pega tamanho da font do elemento root -> html*/
