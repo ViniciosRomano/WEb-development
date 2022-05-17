@@ -1,0 +1,354 @@
+/* reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* se usar padding ultiliza box-sizin, n tenho ctz */
+}
+
+/* criando variaveis */
+:root {
+    /* --name-name: color; */
+    --bg-dark: #000;
+    --light: #fff;
+    --hover: #dc143c;
+}
+
+html {
+    /* faz alimaçao para descer */
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+/* formataçoes geneticas */
+body {
+    /* colocar a fonte jogada no head para o body */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+}
+
+ul,
+ol {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    color: var(--light);
+    transition: .5s;
+    font-size: 1.5rem;
+}
+
+/* so muda a cor quando o mouse passa por cima o hover */
+a:hover {
+    color: var(--hover)
+}
+/* fim formataçoes genericas */
+
+
+/* medidas novas EM - referencia ao tamnho da font do elemento pai e REM */
+
+/* formataçao do header */
+.header-page {
+    /* w100% */
+    width: 100%;
+    height: 8rem;
+    /* background-color: #bc143c; */
+    /* padrao flex leva a direita os filhos do  */
+    display: flex;
+    /* posiçao inicial dos filhos */
+    flex-direction: row;
+    /* padrao flex é row fica na mesma linha */
+    /* alinhamento vertical, flex start or flex end or center */
+    align-items: center;
+    /* alinhamento horizontal flex start or flex end or center, space between, space around,space-evenly  */
+    justify-content: space-between;
+    /* cria identaçao ao lados */
+    padding: 0 10px;
+    /* posicionando o menu */
+    position: fixed;
+    /* position fixed(mantem a parte de cima) ou absolute(nao mantem)*/
+    z-index: 1;
+    /* z-index fica em cima se esta diferente do static */
+    top: 0;
+    left: 0;
+}
+
+.header-title {
+    color: var(--light);
+    font-size: 6vmin;
+}
+
+/* mistura de classe com ul */
+.menu ul {
+    display: flex;
+}
+
+.menu li {
+    /* e externo entao nao é pedding */
+    margin: 0 1rem;
+}
+
+/*fim formataçao do header */
+
+
+.container {
+    /* Colocar em porcentagem a width sempre e colocar height vh */
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    /* use fixed ou scroll, porem fixed e bem melhor */
+}
+
+.hero {
+    /*display flex, deixa flexivel para configurar as coisas */
+    display: flex;
+    /* column deixa como se estivesse sem flex, o row mesma linha */
+    flex-direction: column;
+    /* centraliza align itens center lados */
+    align-items: center;
+    /*centraliza itens no meio da pagina*/
+    justify-content: center;
+    /* centraliza o texto */
+    text-align: center;
+}
+/************************** hero inicio***************************/
+.hero-title {
+    color: var(--light);
+    font-size: 8vmin;
+    /* margem em baixo */
+    margin-bottom: 3rem;
+}
+
+/* span serve para nada so pra decorar */
+.logo {
+    color: var(--hover);
+}
+
+.hero-text {
+    color: var(--light);
+    /* 60% de 100% do container*/
+    width: 60%;
+    margin-bottom: 5rem;
+}
+
+.btn {
+    /* Aumenta o click, ficando quadrado */
+    border: 1px solid var(--hover);
+    /* espaçamento interno 10px para cima e para baixo e 20px para os lados */
+    padding: 1rem 2rem;
+    /* arredonda a borda */
+    border-radius: 7rem;
+    color: var(--light);
+    background-color: var(--hover);
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--hover);
+}
+/************************** hero fim ***************************/
+
+/* images de fundo */
+/* inicio tech*/
+.tech{
+    display: flex;
+    align-items: center;
+    /* espace evenly separa */
+    justify-content: space-evenly;
+}
+
+.tech-item{
+    width: 30%;
+    min-height: 50rem;
+    border: 1px solid var(--hover);
+    border-radius: 7px;
+    color: var(--light);
+    text-align: center;
+    /* ultilizar display flax para colocar itens abaixo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tech-icon{
+    font-size: 5rem;
+    color: var(--hover);
+    cursor: pointer;
+    /* colocar aqui pois fica seco no hover */
+    transition: .5s;
+}
+.tech-title{
+    margin: 3rem 0;
+}
+.tech-text{
+    margin: 3rem 0;
+}
+.tech-icon:hover{
+    /* 1440 ou 360 */
+    transform: rotate(1440deg);
+}
+/* fim tech */
+/* inicio soluti on */
+.solution{
+    color: var(--light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 6rem;
+}
+.solution-box{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.solution-box h2{
+    margin: 5rem 0;
+    font-size: 5vmin;
+}
+.solution-box p{
+    text-align: center;
+    margin: 5rem 0;
+}
+.span-solution{
+    display: block;
+    margin-top: 2rem;
+    text-align: center;
+    color: var(--hover);
+}
+
+.span-solution::after{
+    /* serva para a animaçao */
+    content: 'agronegócio';
+    /* colocar o nome do key frame tempo e tals */
+    animation: solution infinite 5s;
+
+}
+@keyframes solution {
+    20%{
+        content: 'indústria';
+    }
+    40%{
+        content: 'Educação';
+    }
+    60%{
+        content: 'Saúde';
+    }
+    80%{
+        content: 'Transporte';
+    }
+}
+/* fim solution */
+
+/* incio gallery */
+.gallery{
+    display: flex;
+    /* serve para quebrar o linha ou no wrap nao quebra */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+.gallery-item{
+    width: 22%;
+    background-color: var(--light);
+    padding: 1rem 1rem 2rem 1rem;
+    transform: .5;
+}
+.gallery-item:hover{
+    transform: scale(1.2);
+    /* aponta o cursor */
+    cursor: pointer;
+
+}
+.gallery-item img{
+    width: 100%;
+}
+
+.gallery-item figcaption{
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+/* .rotate-left{
+    transform: rotate(-10deg);
+}
+.rotate-right{
+    transform: rotate(10deg);
+} feio mas e so colocar a classe */
+/* fim gallery */
+.bg-image-1 {
+    /* alt seta para baixo muda a linha */
+    /* backgroud-image, url e ..  para voltar / diretorio */
+    /* radient,linear-gradient nao esquecer da virgula, a de afa rgba(colocar cor), .8 é opacidade */
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)),
+    url(../images/pexels-daniel-putzer-633409.jpg);
+}
+
+.bg-image-2 {
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+    url(../images/pexels-negative-space-34600.jpg);
+}
+
+.bg-image-3 {
+    background-image: url(../images/pexels-tranmautritam-69432.jpg);
+}
+
+.bg-color-1 {
+    /* ctrl espaço */
+    background-color: var(--bg-dark);
+}
+
+/* Começando a pensar no responsivo */
+
+@media(max-width:1000px){
+    .header-page{
+        background-color: rgba(0, 0, 0, .8);
+    }
+}
+
+@media(max-width:768px){
+    .header-page{
+        
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .header-title {
+        color: var(--hover);
+    }
+    .tech{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .tech-item{
+        width: 80%;
+        margin: 2rem 0;
+        min-height: 35rem;
+        border: 0;
+        padding: 2rem 0;
+    }
+    .solution{
+        padding: 0 3rem;
+    }
+    .solution-box{
+        width: 100%;
+    }
+
+    .solution-box p{
+        margin: 2rem 0;
+        font-size: 1.3rem;
+        width: 70%;
+    }
+    .gallery-item{
+        width: 44%;
+        margin: 1rem 0;
+    }
+    
+}

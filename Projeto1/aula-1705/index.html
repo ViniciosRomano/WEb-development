@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- control vircula configuraçoes -->
+<!-- para arumar a pagina click botao direito formatar com beaty -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site sobre tecnologia inovadores dentro da aula de Web Standars da Fiap">
+    <title>Projeto X</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link, linka css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--CSS LightBox -->
+    <link rel="stylesheet" href="dist/css/lightbox.min.css">
+</head>
+
+<body>
+    <!-- uma div que serve para montar um cabeçario -->
+    <header class="header-page">
+        <!-- criar uma classe ao header,h1,nav -->
+        <h1 class="header-title">Projeto <span class="logo">XPTO</span></h1>
+        <!-- nav conteiner de navegaçao -->
+        <!-- ul lista nao ordenada,  ol lista ordenada, li escreve na lista, a tranforma em redirecionadores links -->
+        <!-- nav>ul>li*4>a{link}     -->
+        <nav class="menu">
+            <ul>
+                <li><a href="#tech">Tecnologias</a></li>
+                <li><a href="#solution">Soluções</a></li>
+                <li><a href="#portfolio">Galeria</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- .container*4, shift alt seta  para baixo duplica -->
+
+    <!-- inicio hero -->
+    <!-- div.container.bg-image-1 -->
+    <div class="container bg-image-1 hero" id="hero">
+        <h2 class="hero-title">Lorem, ipsum dolor.</h2>
+        <p class="hero-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita reiciendis cumque sunt
+            consequatur odit!</p>
+        <!-- alt z quebra linha -->
+        <a href="" class="btn">Mais informações</a>
+    </div>
+    <!-- fim hero -->
+
+    <div class="container bg-color-1 tech" id="tech">
+        <!-- inicio tech -->
+        <!-- .tech-item*3 -->
+        <div class="tech-item">
+            <i class="fa-solid fa-car-side tech-icon"></i>
+            <h2 class="tech-title">Lorem, ipsum.</h2>
+            <p class="tech-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam molestias esse rerum
+                officia?</p>
+            <a href="" class="btn">Veja mais</a>
+        </div>
+        <div class="tech-item">
+            <i class="fa-brands fa-apple tech-icon"></i>
+            <h2 class="tech-title">Lorem, ipsum.</h2>
+            <p class="tech-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit itaque nobis autem
+                aliquam.</p>
+            <a href="" class="btn">Veja mais</a>
+        </div>
+        <div class="tech-item">
+            <i class="fa-brands fa-d-and-d tech-icon"></i>
+            <h2 class="tech-title">Lorem, ipsum.</h2>
+            <p class="tech-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae veritatis quisquam
+                perspiciatis doloribus.</p>
+            <a href="" class="btn">Veja mais</a>
+        </div>
+        <!-- fim tech -->
+    </div>
+    <!-- solution -->
+    <div class="container bg-image-2 solution" id="solution">
+
+        <div class="solution-box">
+            <h2>Criamos soluções para:
+                <span class="span-solution"></span>
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus alias iste atque ratione.
+            </p>
+            <a href="" class="btn">mais informações <i class="fa-solid fa-gear"></i></i></a>
+        </div>
+    </div>
+    <!-- fim solution -->
+    <!-- galeria de imagens -->
+    <div class="container bg-color-1 gallery" id="portfolio">
+        <figure class="gallery-item scale">  
+        <a href="./images/gallery/pexels-azamat-esenaliev-117729.jpg" data-lighbox="gallery" data-title="imagens do xpto" >
+            <img src="./images/gallery/pexels-azamat-esenaliev-117729.jpg" alt="Imagem do pexels">
+        </a>
+            <figcaption>Lorem, ipsum dolor.</figcaption>
+        </figure>
+
+        <figure class="gallery-item scale">  
+        <a href="./images/gallery/pexels-markus-spiske-6212801.jpg" data-lighbox="gallery" data-title="imagens do xpto" >
+            <img src="./images/gallery/pexels-markus-spiske-6212801.jpg" alt="Imagem do pexels">
+        </a>
+            <figcaption>Lorem, ipsum dolor.</figcaption>
+        </figure>
+
+        <figure class="gallery-item scale">  
+        <a href="./images/gallery/pexels-max-deroin-51415.jpg" data-lightbox="gallery" data-title="imagens do xpto" >
+            <img src="./images/gallery/pexels-max-deroin-51415.jpg" alt="Imagem do pexels">
+        </a>
+            <figcaption>Lorem, ipsum dolor.</figcaption>
+        </figure>
+
+        <figure class="gallery-item scale">  
+        <a href="./images/gallery/pexels-monoar-rahman-109371.jpg" data-lightbox="gallery" data-title="imagens do xpto" >
+            <img src="./images/gallery/pexels-monoar-rahman-109371.jpg" alt="Imagem do pexels">
+        </a>
+            <figcaption>Lorem, ipsum dolor.</figcaption>
+        </figure>
+
+        <figure class="gallery-item scale">  
+        <a href="./images/gallery/pexels-photomix-company-230544.jpg" data-lightbox="gallery" data-title="imagens do xpto" >
+            <img src="./images/gallery/pexels-photomix-company-230544.jpg" alt="Imagem do pexels">
+        </a>
+            <figcaption>Lorem, ipsum dolor.</figcaption>
+        </figure>
+
+        <figure class="gallery-item scale">  
+        <a href="./images/gallery/pexels-soumil-kumar-735911.jpg" data-lightbox="gallery" data-title="imagens do xpto" >
+            <img src="./images/gallery/pexels-soumil-kumar-735911.jpg" alt="Imagem do pexels">
+        </a>
+            <figcaption>Lorem, ipsum dolor.</figcaption>
+        </figure>
+
+        <figure class="gallery-item scale">  
+        <a href="./images/gallery/pexels-tranmautritam-251225.jpg" data-lightbox="gallery" data-title="imagens do xpto" >
+            <img src="./images/gallery/pexels-tranmautritam-251225.jpg" alt="Imagem do pexels">
+        </a>
+            <figcaption>Lorem, ipsum dolor.</figcaption>
+        </figure>
+
+        <figure class="gallery-item scale">  
+        <a href="./images/gallery/pexels-john-petalcurin-2115257.jpg" data-lightbox="gallery" data-title="imagens do xpto">
+            <img src="./images/gallery/pexels-john-petalcurin-2115257.jpg" alt="Imagem do pexels">
+        </a>
+            <figcaption>Lorem, ipsum dolor.</figcaption>
+        </figure>
+    </div>
+    <!-- JavaScript LightBox -->
+    <script src="./dist/js/lightbox-plus-jquery.min.js"></script>
+    <!-- fim galeria de imagens -->
+    <div class="container bg-image-3" id="contact"></div>
+    <!-- fim hero -->
+</body>
+
+</html>
