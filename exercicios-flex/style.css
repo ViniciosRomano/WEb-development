@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-decoration: none;
+}
+
+/*>>>>>>>>>>>>>>>> inicio all 1 <<<<<<<<<<<<<<<<<< */
+.all{
+    border: 2px solid #000;
+    min-width: 90%;
+    min-height: 100%;
+    margin: 20px;
+    padding: 10px 20px;
+}
+/*>>>>>>>>>>>>>>>> inicio bloco 1 <<<<<<<<<<<<<<<<<< */
+.controller{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    border: 2px #000 solid;
+    width: 100%;
+    min-height: 100px;
+    margin: 10px 0px;
+    padding: 20px;
+}
+/*>>>>>>>>>>>>>>>> inicio bloco 2 <<<<<<<<<<<<<<<<<< */
+.controller1{
+    display: flex;
+    justify-content: space-between;
+}
+.container1{
+    border: 2px #000 solid;
+    width: 20%;
+    height: 150px;
+}
+.container2{
+    border: 2px #000 solid;
+    width: 80%;
+    height: 150px;
+    margin: 0px 10px;
+}
+/*>>>>>>>>>>>>>>>> inicio bloco 3 <<<<<<<<<<<<<<<<<< */
+.controller2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container3{
+    border: 2px #000 solid;
+    width: 20%;
+    height: 250px;
+}
+.container4{
+    border: 2px #000 solid;
+    width: 20%;
+    height: 250px;
+}
+.container5{
+    border: 2px #000 solid;
+    width: 20%;
+    height: 250px;
+}
+.container6{
+    border: 2px #000 solid;
+    width: 20%;
+    height: 250px;
+}
+/*>>>>>>>>>>>>>>>> inicio bloco 4 <<<<<<<<<<<<<<<<<< */
+.controller3{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container7{
+    border: 1px #000 solid;
+    width: 0%;
+    height: 150px;
+}
+.container8{
+    border: 1px #000 solid;
+    width: 0%;
+    height: 150px;
+}
+
+/*>>>>>>>>>>>>>>>> inicio all 2 <<<<<<<<<<<<<<<<<< */
+
+/*>>>>>>>>>>>>>>>> inicio bloco 1 <<<<<<<<<<<<<<<<<< */
+.controller4{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.container9{
+    border: 2px #000 solid;
+    width: 67%;
+    height: 400px;
+}
+.container10{
+    border: 2px #000 solid;
+    width: 31%;
+    height: 400px;
+}
+/*>>>>>>>>>>>>>>>> inicio bloco 2 <<<<<<<<<<<<<<<<<< */
+.controller5{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.container11{
+    border: 2px #000 solid;
+    width: 32.5%;
+    height: 150px;
+}
+.container12{
+    border: 2px #000 solid;
+    width: 32.5%;
+    height: 150px;
+}
+.container13{
+    border: 2px #000 solid;
+    width: 31%;
+    height: 150px;
+}
+/*>>>>>>>>>>>>>>>> inicio bloco 3 <<<<<<<<<<<<<<<<<< */
+.controller6{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.container14{
+    border: 2px #000 solid;
+    width: 100%;
+    height: 100px;
+}
+
+/*>>>>>>>>>>>>>>>> inicio all 3 <<<<<<<<<<<<<<<<<< */
+
+/*>>>>>>>>>>>>>>>> inicio bloco 1 <<<<<<<<<<<<<<<<<< */
+.containerx{
+    border: 2px #000 solid;
+    min-height: 40px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+}
+.controller7{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+.controller8{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.container15{
+    border: #000 2px solid;
+    width: 79%;
+    height: 100px;
+}
+.container16{
+    border: #000 2px solid;
+    width: 20%;
+    height: 100px;
+}
+/*>>>>>>>>>>>>>>>> inicio bloco 2 <<<<<<<<<<<<<<<<<< */
+.containery{
+    border: 2px #000 solid;
+    height: 40vh;
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    display: flex;
+    /* justify-content: right;
+    align-items: flex-end; */
+}
+
+.controller10{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 40vh;
+}
+.container17{
+    border: #000 2px solid;
+    width: 48%;
+    height: 48%;
+    margin: 0 1%;
+}
+
+.container18{
+    border: #000 2px solid;
+    width: 80%;
+    height: 98%;
+}
+/*>>>>>>>>>>>>>>>> Ultimo bloco <<<<<<<<<<<<<<<<<< */
+.containerz{
+    border: 2px #000 solid;
+    height: 40vh;
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    display: flex;
+}
+.controller11{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 40vh;
+}
+.container19{
+    border: #000 2px solid;
+    width: 48%;
+    height: 48%;
+    margin: 0 1% 0 0;
+}
+.container20{
+    border: #000 2px solid;
+    width: 80%;
+    height: 98%;
+}
+.container21{
+    border: #000 2px solid;
+    width: 100%;
+    height: 20vh;
+    margin-top: 10px;
+}
