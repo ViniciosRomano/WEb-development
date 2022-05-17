@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --grey: #858585;
+    --black: #000;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 5vh 15vh;
+}
+
+a {
+    color: var(--black);
+}
+
+.icon {
+    color: var(--colorx);
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.text {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.circle {
+    color: var(--grey);
+    font-weight: 900;
+}
+
+.controller {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.imgprincipal {
+    width: 55%;
+    height: 100%;
+    padding: 0.25%;
+    border-radius: 3vh;
+}
+
+.containery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.secondaryimg {
+    width: 50%;
+    height: 50%;
+    padding: 0.3%;
+    border-radius: 3vh;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.description {
+    margin-bottom: 40px;
+}
+
+
+.container {
+    min-width: 100%;
+    min-height: 30vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerx {
+    min-width: 40%;
+    height: 100%;   
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.controllerx {
+    border: #000 1px solid;
+    border-radius: 8px;
+    min-width: 40%;
+    height: 80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controllerx p{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+}
+.controllerx a{
+    text-decoration: none;
+    border: #fff 1px solid;
+    color: #fff;
+    background-color: #64748B;
+    border-radius: 7px;
+    padding: 10px 20px;
+    margin-top: 5%;
+    font-size: 20px;
+    font-weight: 600;
+}
+.controllerx a:hover{
+    border: #000 1px solid; 
+    color: #000;   
+}
+.icons{
+    font-size: 60px;
+    padding: 10px;
+}
