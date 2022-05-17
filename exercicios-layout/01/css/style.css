@@ -1,0 +1,148 @@
+/* reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* se usar padding ultiliza box-sizin, n tenho ctz */
+}
+:root{
+    --white: #fff;
+    --green: #0C4D54;
+    --grey: rgb(51, 51, 51);
+    --black: #000;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.header-page{
+    background-color: var(--green);
+    width: 100%;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+}
+
+.menu li, ul{
+    display: flex;
+    margin: 0 10px;
+    font-weight: bold;
+}
+ul, ol{
+    list-style: none;
+}
+.logo{
+    margin-top: 10px;
+    margin-left: 25px;
+}
+a{
+    text-decoration: none;
+    color: var(--white);
+    transition: .5s;
+}
+.linkmenu:hover{
+    color: var(--black);
+}
+.header-title{
+    color:var(--white);
+    display: flex;
+    align-items: center;
+}
+.images{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+.imagesdentro{
+    width: 22%;
+}
+.imgs{
+    width: 100%;
+}
+h2{
+    font-weight: bold;
+    margin: 10px 0;
+}
+.textcont{
+    margin-bottom: 15px;
+}
+.btn{
+    background-color: var(--green);
+    border: 1px solid var(--green);
+    padding: 8px 10px;
+    border-radius: 7px;
+    font-weight: 600;
+    transition: .5s;
+}
+.btn:hover{
+    background-color: transparent;
+    color: var(--green);
+}
+
+.imgfundo{
+    width: 100%;
+    position: absolute;
+}
+
+.containerflex{
+    margin-top: 3%;
+    width: 100%;
+}
+
+.whitebox{
+    border: 1px solid var(--white);
+    border-radius: 7px;
+    position: absolute;
+    width: 80%;
+    height: 40vh;
+    background-color: var(--white);
+    opacity: 0.7;
+}
+.superior{
+    padding-top: 17%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.content{
+    position: absolute;
+}
+
+ .cadastro{
+    font-size: 28px;
+    color: var(--grey);
+    font-weight: 600;
+    text-align: center;
+    width: 90%;
+}
+.email{
+    width: 65%;
+    height: 8vh;
+    border: 1px solid var(--green);
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.enviar{
+    font-size: 20px;
+    font-weight: 600;
+    width: 15%;
+    height: 8vh;
+    background-color: var(--green);
+    border: 1px solid var(--green);
+    border-radius: 8px ;
+    color: var(--white);
+} 
+input:hover{
+    color: var(--green);
+    background-color: transparent;
+    transition: .5s;
+}

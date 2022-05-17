@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color1: #63444A;
+}
+body{
+    font-family: calibri;
+    text-decoration: none;
+}
+.heade-page{
+    width: 100%;
+    height: 55px;
+    top: 0;
+    left: 0;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+}
