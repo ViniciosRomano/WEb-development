@@ -1,0 +1,147 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --black:#000;
+    --white:#fff;
+    --grey:#323232;
+    --blue:#0594E3;
+}
+html{
+    font-size: 62.5%;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+ul, a{
+    list-style: none;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--grey);
+}
+.header{
+    width: 100%;
+    height: 6rem;
+}
+.header-page{
+    background-color: var(--white);
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+}
+.header-page i{
+    font-size: 2.5rem;
+}
+.header-page span{
+    color: var(--white);
+    background-color: var(--grey);
+    font-weight: 600;
+}
+
+.header-title{
+    margin: 0 1rem;
+    font-weight: 600;
+    color: var(--grey);
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+}
+.menu ul{
+    display: flex;
+    flex-direction: row;
+}
+.menu li{
+    margin: 0 1rem;
+}
+.menu a:hover{
+    color: var(--black);
+    font-weight: 900;
+    transition: .5s;
+}
+
+.home{
+    width: 100%;
+    min-height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bg-image{
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 60rem;
+}
+.settings{
+    margin-left: 10rem;
+    font-size: 3rem;
+}
+.home h2{
+    font-size: 5rem;
+    color: var(--blue);
+}
+.clientes{
+    margin: 1rem 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.cont{
+    width: 30%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cont a{
+    border: 2px var(--grey) solid;
+    background-color: var(--grey);
+    color: var(--white);
+    border-radius: 1.5rem;
+    padding: 0.8rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.cont a:hover{
+    background-color: transparent;
+    color: var(--grey);
+    border-radius: 2rem;
+    font-weight: 900;
+    padding: 1rem;
+}
+.cont i{
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 6rem;
+    cursor: pointer;
+    transition: .5s;
+    margin-bottom: 2rem;
+}
+.cont i:hover{
+    transform: rotate(360deg);
+}
+.header-page a:hover{
+    color: var(--black);
+    font-weight: 900;
+    transition: .5s;
+}
+.header-page i:hover{
+    color: var(--black);
+    font-weight: 900;
+    transition: .5s;
+}

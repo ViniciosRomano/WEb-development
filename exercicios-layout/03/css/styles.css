@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Calibri;
+}
+
+:root {
+    --page-gray: #343434;
+    --page-blue: #0694D6;
+    --page-light-gray: #A1A0A5;
+    --page-lighter-gray: #F4F3F8;
+    --white: #fff;
+}
+
+.pageContent {
+    margin: 0 50px;
+}
+
+.pageHeader {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.pageHeader header {
+    font-size: 30px;
+    align-self: center;
+    margin-left: 40px;
+    color: var(--page-gray);
+}
+
+.pageHeader header span{
+    background: var(--page-gray);
+    color: var(--white);
+}
+
+.pageHeader nav {
+    display: flex;
+    font-size: 13px;
+}
+
+.pageHeader li {
+    margin: 20px;
+}
+
+.pageHeader a {
+    color: var(--page-gray);
+    font-weight: bold;
+}
+
+.pageBanner {
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/banner.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 320%;
+}
+
+.pageBanner h1 {
+    color: var(--page-blue);
+    font-size: 100px;
+    font-weight: normal;    
+}
+
+.pageBanner h2 {
+    color: var(--page-gray);
+    font-weight: normal;
+}
+
+.pageBanner h3 {
+    color: var(--page-light-gray);
+    font-weight: 100;
+    line-height: 400%;
+}
+
+.pageBannerText {
+    margin-left: 100px;
+}
