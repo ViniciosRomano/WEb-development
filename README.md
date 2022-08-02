@@ -4,3 +4,5 @@ https://bit.ly/3A1zGMn - https://www.notion.so/Web-Standards-and-Game-Developing
 caniuse, mdn css gradiente, **https://fontawesome.com/**, https://cdnjs.com/libraries/font-awesome
 #
 https://getbootstrap.com/docs/5.1/layout/grid/
+#
+https://tailwindcss.com/
