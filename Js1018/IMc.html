@@ -22,9 +22,10 @@
                     <thead class="table-dark">
                         <tr id="cabecalho">
                             <th class="usuario">Usuário</th>
-                            <th class="email">Email</th>
-                            <th class="data-cadastro">Data do Cadastro</th>
-                            <th class="tipo-conta">Tipo de conta</th>
+                            <th class="email">Peso</th>
+                            <th class="data-cadastro">Altura</th>
+                            <th class="tipo-conta">Imc Obtido</th>
+                            <th class="">Resultado Imc</th>
                         </tr>
                     </thead>
                     <tbody class="historico"></tbody>
@@ -35,35 +36,28 @@
             <form class="dados" id="dados" method="post" action="">
                 <div class="row mb-3">
 
-                    <div class="col-md-12 my-3">
+                    <div class="col-md-4 my-3">
                         <label for="usuario" class="form-label">Usuário</label>
                         <input type="text" class="form-control" id="usuario" name="usuario"
                             placeholder="ex: Darth Vader" required autofocus>
                     </div>
 
                     <div class="col-md-4  my-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" name="email"
+                        <label for="peso" class="form-label">Peso</label>
+                        <input type="text" class="form-control" id="email" name="email"
                             placeholder="ex: seuemail@email.com" required>
                     </div>
 
                     <div class="col-md-4  my-3">
-                        <label for="dataCadastro" class="form-label">Data do Cadastro</label>
-                        <input type="date" class="form-control" id="dataCadastro" name="dataCadastro" required>
+                        <label for="altura" class="form-label">Data do Cadastro</label>
+                        <input type="text" class="form-control" id="altura" name="dataCadastro" required>
                     </div>
 
-                    <div class="col-md-4  my-3">
-                        <label for="tipoConta" class="form-label">Tipo de Conta</label>
-                        <select id="tipoConta" class="form-select" required>
-                            <option value="0">Selecione o tipo de conta</option>
-                            <option value="Free">Free</option>
-                            <option value="Pro">Pro</option>
-                        </select>
-                    </div>
+ 
                 </div>
 
                 <div class="d-flex justify-content-end mt-3">
-                    <button type="submit" class="btn btn-primary">Confirmar</button>
+                    <button type="submit" class="btn btn-primary">Calcular Imc</button>
                 </div>
             </form>
         </div>     
