@@ -1,0 +1,10 @@
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+.logo{
+    width: 80%;
+}
+.medal{
+    font-size: 1.6rem;
+}
