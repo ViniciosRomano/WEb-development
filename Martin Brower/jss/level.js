@@ -10,7 +10,7 @@ let ouro = "#ffd700";
 let black = "#000";
 
 
-let point = "100%";
+let point = "20%";
 
 
 level.style.width = point;
@@ -83,3 +83,4 @@ if (level.style.width == "100%"){
         }
     }
 }
+
