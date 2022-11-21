@@ -1,0 +1,21 @@
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+.logo{
+    width: 80%;
+}
+.medal{
+    font-size: 1.6rem;
+}
+.containerData{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerNothing{
+    width: 104.22px;
+}
